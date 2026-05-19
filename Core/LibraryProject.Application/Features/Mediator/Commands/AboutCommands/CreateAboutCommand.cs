@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryProject.Application.Features.Mediator.Commands.AboutCommands
 {
-	public class CreateAboutCommand:IRequest
+	public class CreateAboutCommand : IRequest
 	{
 		public string Title { get; set; }
 
