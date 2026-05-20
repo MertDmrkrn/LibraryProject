@@ -23,12 +23,12 @@ namespace LibraryProject.Application.Features.Mediator.Handlers.AboutHandlers
 		public async Task<List<GetAboutQueryResult>> Handle(GetAboutQuery request, CancellationToken cancellationToken)
 		{
 			var values = await _repository.GetAllAsync();
-			return values.Select(x=> new GetAboutQueryResult
+			return values.Select(x => new GetAboutQueryResult
 			{
 				AboutID = x.AboutID,
 				AboutImgUrl = x.AboutImgUrl,
 				Description = x.Description,
-				Title=x.Title
+				Title = x.Title
 			}).ToList();
 		}
 	}
