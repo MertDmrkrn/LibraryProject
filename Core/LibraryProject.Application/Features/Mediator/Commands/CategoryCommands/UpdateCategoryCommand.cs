@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryProject.Application.Features.Mediator.Commands.CategoryCommands
 {
-	public class UpdateCategoryCommand:IRequest
+	public class UpdateCategoryCommand : IRequest
 	{
 		public int CategoryID { get; set; }
 
