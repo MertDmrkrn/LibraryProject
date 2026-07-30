@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryProject.Application.Features.Mediator.Commands.GenreCommands
 {
-	public class UpdateGenreCommand:IRequest
+	public class UpdateGenreCommand : IRequest
 	{
 		public int GenreID { get; set; }
 
